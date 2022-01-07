@@ -1,0 +1,19 @@
+<div>
+  <!-- Interpolation or one way data binding -->
+  <!-- <h1>{{ this.title }}</h1> -->
+  <h1>Hello {{ this.userName }} from BridgeLabz</h1>
+  <!-- Property data binding -->
+  <img
+    [src]="imgUrl"
+    (click)="onClick($event)"
+    alt="The BridgeLabz logo: a Bridge to 
+  Employment through a Lab Works."
+  />
+</div>
+<div>
+  <!-- Two way binding -->
+  <input (input)="onInput($event)" [(ngModel)]="userName" />
+  <span class="error-output error-text">{{ this.nameError }}</span>
+</div>
+
+<router-outlet></router-outlet>
